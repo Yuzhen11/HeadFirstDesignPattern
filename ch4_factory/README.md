@@ -13,3 +13,9 @@
     Design Principle:
 
     Depend upon abstraction. Do not depend upon concrete classes.
+
+3. Abstract Factory Pattern, P156
+
+    **The Abstract Factory Pattern** provides an interface for creating families of related or dependent objects without specifying their concrete classes. P156
+
+    Each Pizza has an ingredient factory. Use the factory to prepare the pizza.
