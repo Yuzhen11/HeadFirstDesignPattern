@@ -29,6 +29,8 @@ private:
             std::cout << menuItem->getName() << std::endl;
         }
     }
+
+    // DinerMenu and PancakeMenu can inherit Menu, so Waitress only need to depend on the Menu interface, but not concrete DinerMenu and PancakeMenu
     std::shared_ptr<DinerMenu> dinerMenu;
     std::shared_ptr<PancakeMenu> pancakeMenu;
 };
