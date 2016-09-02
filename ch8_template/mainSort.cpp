@@ -7,7 +7,9 @@ public:
     Duck() {}
     Duck(const std::string& _name): name(_name) {}
     virtual bool compareTo(Comparable* other) {
-        return name < dynamic_cast<Duck*>(other)->name;
+        // return name < dynamic_cast<Duck*>(other)->name;
+        // static_cast can also work actually
+        return name < static_cast<Duck*>(other)->name;
     }
     virtual void print() {
         std::cout << name << std::endl;
