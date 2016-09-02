@@ -8,3 +8,5 @@ Remarks:
 
 Singleton Pattern is very simple but useful. Use double-checked locking in multi-thread environment. In Java, we can use `synchronized` keyword to make a critical section, in C++, we need to use lock and mutex.
 
+Actually, we can use C++ style to implement Singleton. And C++11
+will gurantee that the initialization is thread-safe.

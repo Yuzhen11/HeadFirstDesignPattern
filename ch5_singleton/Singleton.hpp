@@ -39,3 +39,15 @@ private:
 };
 Singleton * Singleton::uniqueInstance = nullptr;
 std::mutex Singleton::singleton_mutex;
+
+// Singleton, C++ styles
+class Singleton2 {
+public:
+    static Singleton2 * getInstance() {
+        static Singleton2 singleton;
+        return &singleton;
+    }
+private:
+    // Constructor is private
+    Singleton2() { std::cout << "Singleton created." <<std::endl;}
+};
